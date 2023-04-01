@@ -81,12 +81,12 @@ $(function () {
         const enabled = myStream.getAudioTracks()[0].enabled;
         if(enabled){
             myStream.getAudioTracks()[0].enabled = false;
-            html = `<i class='fas fa-microphone-splash'></i>`
+            html = `<i class='fa fa-microphone-splash'></i>`
             $('mute_button').toggleClass('background-color: red')
             $('#mute_button').html(html)
         } else {
             myStream.getAudioTracks()[0].enabled = true;
-            html = `<i class='fas fa-microphone'></i>`
+            html = `<i class='fa fa-microphone'></i>`
             $('mute_button').toggleClass('background-color: blue')
             $('#mute_button').html(html)
         }
